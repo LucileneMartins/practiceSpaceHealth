@@ -1,5 +1,4 @@
 # practiceSpaceHealth
-# smokeTestGmailProject
 
 Project Test Web
 
