@@ -1,0 +1,33 @@
+{
+  "name": "practicespacehealth",
+  "version": "1.0.0",
+  "description": "Project Test Web",
+  "main": "cypress.config.js",
+  "scripts": {
+    "cy:open": "npx cypress open --e2e",
+    "cy:run": "npx cypress run"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/LucileneMartins/practiceSpaceHealth.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/LucileneMartins/practiceSpaceHealth/issues"
+  },
+  "homepage": "https://github.com/LucileneMartins/practiceSpaceHealth#readme",
+  "cypress-cucumber-preprocessor": {
+    "stepDefinitions": "cypress/support/**/*.js"
+  },
+  "devDependencies": {
+    "@badeball/cypress-cucumber-preprocessor": "^13.0.2",
+    "@bahmutov/cypress-esbuild-preprocessor": "^2.1.5",
+    "@esbuild-plugins/node-modules-polyfill": "^0.1.4",
+    "@faker-js/faker": "^7.6.0",
+    "cypress": "^10.10.0"
+  },
+  "dependencies": {
+    "faker": "^6.6.6"
+  }
+}

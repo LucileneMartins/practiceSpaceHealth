@@ -7,19 +7,23 @@
 // commands please read more here:
 // https://on.cypress.io/custom-commands
 // ***********************************************
-//
-//
-// -- This is a parent command --
-// Cypress.Commands.add('login', (email, password) => { ... })
-//
-//
-// -- This is a child command --
-// Cypress.Commands.add('drag', { prevSubject: 'element'}, (subject, options) => { ... })
-//
-//
-// -- This is a dual command --
-// Cypress.Commands.add('dismiss', { prevSubject: 'optional'}, (subject, options) => { ... })
-//
-//
-// -- This will overwrite an existing command --
-// Cypress.Commands.overwrite('visit', (originalFn, url, options) => { ... })
+
+Cypress.Commands.add('accessOnboardingPage', (url) => {
+    cy.clearCookies();
+    cy.visit('https://app-dev.practicespace.health/therapist-onboarding/1', {
+        onBeforeLoad: (win) => {
+            win.sessionStorage.clear();
+            win.localStorage.clear();
+        }
+    })
+})
+
+Cypress.Commands.add('login', (url) => {
+    cy.clearCookies();
+    cy.visit(url, {
+        onBeforeLoad: (win) => {
+            win.sessionStorage.clear();
+            win.localStorage.clear();
+        }
+    })
+})
