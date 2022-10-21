@@ -36,5 +36,3 @@ $ npm run cy:open </br>
 <b>Run cypress non-gui </b></br>
 $ npm run cy:run </br>
 
-## :rocket: Notes
-Notes -
