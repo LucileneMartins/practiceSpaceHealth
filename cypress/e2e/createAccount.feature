@@ -1,6 +1,6 @@
-Feature: Book Appointment
+Feature: Create Account
 
-    Scenario Outline: Schedule an appointment with a client
+    Scenario Outline: Creating account on wensite
 
         Given User is at the onboarding page
         When User fill the fields on Personal Details

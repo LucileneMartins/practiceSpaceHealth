@@ -18,7 +18,7 @@ Cypress.Commands.add('accessOnboardingPage', (url) => {
     })
 })
 
-Cypress.Commands.add('login', (url) => {
+Cypress.Commands.add('login', (url, email, password) => {
     cy.clearCookies();
     cy.visit(url, {
         onBeforeLoad: (win) => {
@@ -26,4 +26,8 @@ Cypress.Commands.add('login', (url) => {
             win.localStorage.clear();
         }
     })
+    cy.get('#username').type(email);
+    cy.get('#password').type(password);
+    cy.get('button[type="submit"]').click();
 })
+

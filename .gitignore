@@ -109,7 +109,7 @@ cypress/screenshots/
 cypress/videos/
 node_modules/
 cypress/fixtures/leadFile.csv
-secret.json
+staging.json
 
 .idea
 .vscode

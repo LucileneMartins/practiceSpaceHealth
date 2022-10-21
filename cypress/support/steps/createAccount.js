@@ -1,7 +1,7 @@
 import { Given, When, Then } from "@badeball/cypress-cucumber-preprocessor";
-const el = require('../../page/onboarding/elements').ELEMENTS;
-import Onboarding from '../../page/onboarding/methods';
-import PersonalDetails from '../../page/personalDetail/methods'
+const el = require('../page/onboarding/elements').ELEMENTS;
+import Onboarding from '../page/onboarding/methods';
+import PersonalDetails from '../page/personalDetail/methods'
 
 Given('User is at the onboarding page', () => {
     cy.accessOnboardingPage();

@@ -18,7 +18,8 @@
   },
   "homepage": "https://github.com/LucileneMartins/practiceSpaceHealth#readme",
   "cypress-cucumber-preprocessor": {
-    "stepDefinitions": "cypress/support/**/*.js"
+    "nonGlobalStepDefinitions": false,
+    "stepDefinitions": "cypress/support/steps/*.js"
   },
   "devDependencies": {
     "@badeball/cypress-cucumber-preprocessor": "^13.0.2",
@@ -28,6 +29,7 @@
     "cypress": "^10.10.0"
   },
   "dependencies": {
-    "faker": "^6.6.6"
+    "faker": "^6.6.6",
+    "fs-extra": "^10.1.0"
   }
 }
