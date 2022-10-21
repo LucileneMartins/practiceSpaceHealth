@@ -110,6 +110,8 @@ cypress/videos/
 node_modules/
 cypress/fixtures/leadFile.csv
 staging.json
+allure-results
+
 
 .idea
 .vscode

@@ -7,7 +7,7 @@ Tools and Libs:
 - Cypress
 - Cucumber
 - Linguagem Javascript
-- Cypress Dashboard - see documentation [here](https://dashboard.cypress.io/projects/***/runs)
+- Allure Report - see documentation [here](https://)
 - GitHub Actions - CI/CD
 
 ## 🎯 Prerequisites
@@ -36,7 +36,5 @@ $ npm run cy:open </br>
 <b>Run cypress non-gui </b></br>
 $ npm run cy:run </br>
 
-## :rocket: Exercise
-
-Test case - [here]() </b></br>
+## :rocket: Notes
 Notes -
