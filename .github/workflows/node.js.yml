@@ -32,7 +32,7 @@ jobs:
             mkdir allure-report                        
              
     - name: Run Cypress Test
-      run: npm run cypress:run
+      run: npm run regression-report
       
     - name: Generate Allure Report    
       uses: QuintilianoNery/action-allure-report-V2@0.2.0
