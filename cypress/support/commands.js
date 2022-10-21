@@ -9,25 +9,24 @@
 // ***********************************************
 
 Cypress.Commands.add('accessOnboardingPage', (url) => {
-    cy.clearCookies();
-    cy.visit('https://app-dev.practicespace.health/therapist-onboarding/1', {
-        onBeforeLoad: (win) => {
-            win.sessionStorage.clear();
-            win.localStorage.clear();
-        }
-    })
-})
+  cy.clearCookies();
+  cy.visit('https://app-dev.practicespace.health/therapist-onboarding/1', {
+    onBeforeLoad: (win) => {
+      win.sessionStorage.clear();
+      win.localStorage.clear();
+    },
+  });
+});
 
 Cypress.Commands.add('login', (url, email, password) => {
-    cy.clearCookies();
-    cy.visit(url, {
-        onBeforeLoad: (win) => {
-            win.sessionStorage.clear();
-            win.localStorage.clear();
-        }
-    })
-    cy.get('#username').type(email);
-    cy.get('#password').type(password);
-    cy.get('button[type="submit"]').click();
-})
-
+  cy.clearCookies();
+  cy.visit(url, {
+    onBeforeLoad: (win) => {
+      win.sessionStorage.clear();
+      win.localStorage.clear();
+    },
+  });
+  cy.get('#username').type(email);
+  cy.get('#password').type(password);
+  cy.get('button[type="submit"]').click();
+});

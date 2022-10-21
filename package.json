@@ -26,7 +26,8 @@
     "@bahmutov/cypress-esbuild-preprocessor": "^2.1.5",
     "@esbuild-plugins/node-modules-polyfill": "^0.1.4",
     "@faker-js/faker": "^7.6.0",
-    "cypress": "^10.10.0"
+    "cypress": "^10.10.0",
+    "prettier": "2.7.1"
   },
   "dependencies": {
     "faker": "^6.6.6",
