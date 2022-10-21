@@ -7,7 +7,7 @@ Tools and Libs:
 - Cypress
 - Cucumber
 - Linguagem Javascript
-- Allure Report - see documentation [here](https://)
+- Allure Report - see documentation [here](https://lucilenemartins.github.io/practiceSpaceHealth/)
 - GitHub Actions - CI/CD
 
 ## 🎯 Prerequisites
