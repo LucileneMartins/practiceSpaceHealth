@@ -5,7 +5,7 @@ Feature: Booking an appointment
         Given User access the Login page
         When User access create appointment
         When fill the all mandatories fields with valid data
-        Then the system will return a sucessufully message
+        Then the system will return a successfully message
 
     Scenario Outline: Schedule an overlap appointment with client
 

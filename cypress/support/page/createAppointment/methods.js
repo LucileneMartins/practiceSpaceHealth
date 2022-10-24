@@ -31,10 +31,9 @@ class CreateAppointment {
     cy.get(el.priceField).type(price);
   }
 
-  addHour(startHour, meridiem, endHour) {
+  addHour(startHour, endHour, meridiem) {
 
     cy.get(el.startHourField).click();
-
     clickOnset(el.hourField, el.hourValueField, startHour)
     clickOnset(el.meridiumField, el.meridiumValueField, meridiem)
 
