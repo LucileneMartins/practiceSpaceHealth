@@ -8,18 +8,11 @@ Given('User is at the onboarding page', () => {
   Onboarding.validateOnboardingPage();
 });
 
-When('User fill the fields on Personal Details', () => {
+When('User fill the fields on personal details', () => {
   PersonalDetails.fillFieldsPersonalDetails();
 });
 
-When('The Webpage will send a link to email and a successful message', () => {
+When('The webpage will send a link to email and a successfully message', () => {
   PersonalDetails.validateMessagem();
 });
 
-// And('User clicks on login button', () => {
-
-// })
-
-// Then('User is able to successfully login to the Website', () => {
-
-// })

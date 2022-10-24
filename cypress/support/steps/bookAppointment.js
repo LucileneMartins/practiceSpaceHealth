@@ -21,22 +21,22 @@ When('fill the all mandatories fields with valid data', () => {
   CreateAppointment.addPeople();
   CreateAppointment.addAppointmentType();
   CreateAppointment.addDate(3);
-  CreateAppointment.addHour('07', '08', 'PM');
+  CreateAppointment.addHour('10', '11', 'PM');
   CreateAppointment.addPrice(dataCreateAppointment.data.PRICE);
   CreateAppointment.addStatus();
 });
 
-Then('the system will return a sucessufully message', () => {
+Then('the system will return a successfully message', () => {
   CreateAppointment.validate();
 });
 
 When(
   'fill in all mandatory fields overlaying an appointment already scheduled',
   () => {
-  CreateAppointment.addPeople();
+    CreateAppointment.addPeople();
     CreateAppointment.addAppointmentType();
     CreateAppointment.addDate(1);
-    CreateAppointment.addHour('07', '08', 'PM');
+    CreateAppointment.addHour('10', '11', 'PM');
     CreateAppointment.addPrice(dataCreateAppointment.data.PRICE);
     CreateAppointment.addStatus();
   }
@@ -53,7 +53,7 @@ When('fill in the fields and do not inform the price field', () => {
   CreateAppointment.addPeople();
   CreateAppointment.addAppointmentType();
   CreateAppointment.addDate(3);
-  CreateAppointment.addHour('07', '08', 'PM');
+  CreateAppointment.addHour('10', '11', 'PM');
   CreateAppointment.addPrice(' ');
   CreateAppointment.addStatus();
 });

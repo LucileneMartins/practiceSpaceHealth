@@ -10,10 +10,17 @@ function futureDateCalendar(days) {
 
 function clickOnset(element, element2, value) {
 
-  if (element2 != value) {
-    cy.get(element).click();
-  }
+  cy.get(element2).invoke('text').then(($textElement) => {
 
+    if ($textElement != value) {
+      cy.log('VALOR do ELEMENT2 => ' + $textElement)
+      cy.get(element).click();
+      clickOnset(element, element2, value);
+    }
+    else {
+      cy.log('Done!')
+    }
+  })
 }
 
 export { futureDateCalendar, clickOnset };
