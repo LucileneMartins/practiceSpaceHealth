@@ -34,7 +34,7 @@ When(
   () => {
     CreateAppointment.addPeople();
     CreateAppointment.addAppointmentType();
-    CreateAppointment.addDate(9, dataCreateAppointment.data.PRICE);
+    CreateAppointment.addDate(1, dataCreateAppointment.data.PRICE);
     CreateAppointment.addStatus();
   }
 );
