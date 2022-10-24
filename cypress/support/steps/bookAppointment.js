@@ -1,7 +1,6 @@
 import {
   Given,
   When,
-  And,
   Then,
 } from '@badeball/cypress-cucumber-preprocessor';
 import CreateAppointment from '../page/createAppointment/methods';
@@ -21,7 +20,9 @@ When('User access create appointment', () => {
 When('fill the all mandatories fields with valid data', () => {
   CreateAppointment.addPeople();
   CreateAppointment.addAppointmentType();
-  CreateAppointment.addDate(3, dataCreateAppointment.data.PRICE);
+  CreateAppointment.addDate(3);
+  CreateAppointment.addHour('07', '08', 'PM');
+  CreateAppointment.addPrice(dataCreateAppointment.data.PRICE);
   CreateAppointment.addStatus();
 });
 
@@ -34,7 +35,9 @@ When(
   () => {
     CreateAppointment.addPeople();
     CreateAppointment.addAppointmentType();
-    CreateAppointment.addDate(9, dataCreateAppointment.data.PRICE);
+    CreateAppointment.addDate(1);
+    CreateAppointment.addHour('07', '08', 'PM');
+    CreateAppointment.addPrice(dataCreateAppointment.data.PRICE);
     CreateAppointment.addStatus();
   }
 );
@@ -49,7 +52,9 @@ Then(
 When('fill in the fields and do not inform the price field', () => {
   CreateAppointment.addPeople();
   CreateAppointment.addAppointmentType();
-  CreateAppointment.addDate(3, ' ');
+  CreateAppointment.addDate(3);
+  CreateAppointment.addHour('07', '08', 'PM');
+  CreateAppointment.addPrice(' ');
   CreateAppointment.addStatus();
 });
 

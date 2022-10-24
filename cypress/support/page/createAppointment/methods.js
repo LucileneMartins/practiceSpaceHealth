@@ -1,5 +1,5 @@
 const el = require('./elements').ELEMENTS;
-import { futureDateCalendar } from '../Menu/base';
+import { futureDateCalendar, clickOnset } from '../Menu/base';
 
 class CreateAppointment {
   clickCreate() {
@@ -20,12 +20,29 @@ class CreateAppointment {
     cy.get(el.addVideoLinkButton).contains('Add Video Link').click();
   }
 
-  addDate(days, price) {
+  addDate(days) {
     cy.get(
-      '.datetimepicker > [dir="ltr"] > .dp-input-container > .dp-picker-input'
+      el.dataPikerField
     ).click();
     cy.get('[data-date="' + futureDateCalendar(days) + '"]').click();
+  }
+
+  addPrice(price) {
     cy.get(el.priceField).type(price);
+  }
+
+  addHour(startHour, meridiem, endHour) {
+
+    cy.get(el.startHourField).click();
+
+    clickOnset(el.hourField, el.hourValueField, startHour)
+    clickOnset(el.meridiumField, el.meridiumValueField, meridiem)
+
+    cy.get(el.endHourField).click();
+    clickOnset(el.hourField, el.hourValueField, endHour)
+    clickOnset(el.meridiumField, el.meridiumValueField, meridiem)
+
+
   }
 
   addStatus() {

@@ -8,4 +8,12 @@ function futureDateCalendar(days) {
   return futureDate;
 }
 
-export { futureDateCalendar };
+function clickOnset(element, element2, value) {
+
+  if (element2 != value) {
+    cy.get(element).click();
+  }
+
+}
+
+export { futureDateCalendar, clickOnset };
