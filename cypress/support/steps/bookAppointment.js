@@ -33,7 +33,7 @@ Then('the system will return a sucessufully message', () => {
 When(
   'fill in all mandatory fields overlaying an appointment already scheduled',
   () => {
-    CreateAppointment.addPeople();
+  CreateAppointment.addPeople();
     CreateAppointment.addAppointmentType();
     CreateAppointment.addDate(1);
     CreateAppointment.addHour('07', '08', 'PM');

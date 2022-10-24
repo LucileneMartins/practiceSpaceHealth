@@ -7,7 +7,7 @@ Tools and Libs:
 - Cypress
 - Cucumber
 - Linguagem Javascript
-- Allure Report - see documentation [here](https://)
+- Allure Report - see documentation [here](https://lucilenemartins.github.io/practiceSpaceHealth/)
 - GitHub Actions - CI/CD
 
 ## 🎯 Prerequisites
@@ -36,5 +36,3 @@ $ npm run cy:open </br>
 <b>Run cypress non-gui </b></br>
 $ npm run cy:run </br>
 
-## :rocket: Notes
-Notes -
