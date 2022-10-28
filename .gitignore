@@ -111,7 +111,7 @@ node_modules/
 cypress/fixtures/leadFile.csv
 staging.json
 allure-results
-
+.feature-express/
 
 .idea
 .vscode
