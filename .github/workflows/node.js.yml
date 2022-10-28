@@ -33,6 +33,17 @@ jobs:
              
     - name: Run Cypress Test
       run: npm run regression-report
+    
+    - name: Run Feature Express
+      run: npx feature-express ./cypress/e2e/  en 4444
+
+     - name: Get Feature Express history
+      uses: actions/checkout@v2
+      if: always()
+      continue-on-error: true
+      with:
+          ref: gh-pages
+          path: gh-pages
       
     - name: Generate Allure Report    
       uses: QuintilianoNery/action-allure-report-V2@0.2.0
@@ -48,11 +59,8 @@ jobs:
     - name: Allure Report action from marketplace
       uses: simple-elf/allure-report-action@master
       if: always()
-      #id: allure-report
       with:
           allure_results: allure-results
-          #gh_pages: gh-pages
-          #allure_report: allure-report
           allure_history: allure-history
 
     - name: Deploy report to Github Pages
