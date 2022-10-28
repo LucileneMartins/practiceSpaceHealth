@@ -37,7 +37,7 @@ jobs:
     - name: Run Feature Express
       run: npx feature-express ./cypress/e2e/  en 4444
 
-     - name: Get Feature Express history
+    - name: Get Feature Express history
       uses: actions/checkout@v2
       if: always()
       continue-on-error: true
