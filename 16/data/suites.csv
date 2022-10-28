@@ -1,0 +1,5 @@
+"Status","Start Time","Stop Time","Duration in ms","Parent Suite","Suite","Sub Suite","Test Class","Test Method","Name","Description"
+"passed","Fri Oct 28 01:57:43 GMT 2022","Fri Oct 28 01:57:51 GMT 2022","7481","","Create Account","","","","Creating account on wensite",""
+"failed","Fri Oct 28 01:55:32 GMT 2022","Fri Oct 28 01:56:08 GMT 2022","36334","","Booking an appointment","","","","Schedule an appointment with client",""
+"passed","Fri Oct 28 01:56:43 GMT 2022","Fri Oct 28 01:57:16 GMT 2022","33521","","Booking an appointment","","","","Schedule an appointment missing Price mandatory field",""
+"passed","Fri Oct 28 01:56:08 GMT 2022","Fri Oct 28 01:56:42 GMT 2022","34089","","Booking an appointment","","","","Schedule an overlap appointment with client",""
